@@ -28,13 +28,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md ### User-Defined Function (UDF)
-# MAGIC A custom column transformation function
-# MAGIC 
-# MAGIC - Can’t be optimized by Catalyst Optimizer
-# MAGIC - Function is serialized and sent to executors
-# MAGIC - Row data is deserialized from Spark's native binary format to pass to the UDF, and the results are serialized back into Spark's native format
-# MAGIC - For Python UDFs, additional interprocess communication overhead between the executor and a Python interpreter running on each worker node
+
 
 # COMMAND ----------
 
@@ -179,8 +173,3 @@ spark.udf.register("sql_vectorized_udf", vectorized_udf)
 
 # COMMAND ----------
 
-# MAGIC %md-sandbox
-# MAGIC &copy; 2022 Databricks, Inc. All rights reserved.<br/>
-# MAGIC Apache, Apache Spark, Spark and the Spark logo are trademarks of the <a href="https://www.apache.org/">Apache Software Foundation</a>.<br/>
-# MAGIC <br/>
-# MAGIC <a href="https://databricks.com/privacy-policy">Privacy Policy</a> | <a href="https://databricks.com/terms-of-use">Terms of Use</a> | <a href="https://help.databricks.com/">Support</a>
