@@ -28,13 +28,7 @@
 
 # COMMAND ----------
 
-# MAGIC %md ### User-Defined Function (UDF)
-# MAGIC A custom column transformation function
-# MAGIC 
-# MAGIC - Can’t be optimized by Catalyst Optimizer
-# MAGIC - Function is serialized and sent to executors
-# MAGIC - Row data is deserialized from Spark's native binary format to pass to the UDF, and the results are serialized back into Spark's native format
-# MAGIC - For Python UDFs, additional interprocess communication overhead between the executor and a Python interpreter running on each worker node
+
 
 # COMMAND ----------
 
