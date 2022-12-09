@@ -38,10 +38,6 @@
 
 # COMMAND ----------
 
-# MAGIC %md For this demo, we're going to use the sales data.
-
-# COMMAND ----------
-
 sales_df = spark.table("sales")
 display(sales_df)
 
